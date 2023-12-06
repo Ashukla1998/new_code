@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   resources :products
   resources :carts
   resources :cart_products
+  # get 'show/:product_id', to: 'welcomes#show'
 end
   

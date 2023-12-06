@@ -9,7 +9,7 @@ class Ability
       can :read, Product
       can :buy, Product
     elsif user.seller?
-      can :create, Product
+      can :manage, Product
     end
   end
 end

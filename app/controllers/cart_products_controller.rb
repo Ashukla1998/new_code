@@ -10,6 +10,7 @@ class CartProductsController < ApplicationController
   end
   
   def new
+    # debugger
     @product = Product.find(params[:product_id])
     @cart = current_user.cart || current_user.create_cart
     @cart_product = @cart.cart_products.find_or_initialize_by(product_id: @product.id)
